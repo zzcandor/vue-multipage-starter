@@ -1,0 +1,35 @@
+@function px2rem($px) {
+  $rem: 75px;
+  @return ($px/$rem)+rem;
+  // @return $px/2;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.box-padding {
+  margin: 0 px2rem(30px);
+  overflow: hidden;
+}
+
+$color-text: #363636;
+$color-main-bg: #f0f0f0;
+$color-highlight:#fc4c5a;
+$color-line:#e4e4e4;
+p {
+  padding: 0;
+  margin: 0;
+}
